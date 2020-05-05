@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head lang="en">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+        <title>Tasks</title>
+    </head>
+    <body>
+        <section class="container">
+            <h2>Tasks</h2>
+            <!-- TODO: add the ability to list and add tasks (using Javascript!) -->
+            <table id="tasktable">
+                <tr id="taskname"></tr>
+            </table>
+        </section>
+
+       <section class="container">
+            <h2>Add a new task</h2>
+            
+            <form th:action="@{/tasks}" th:method="POST" th:object="${task}">
+                <div class="form-group">
+                    <label for="name" class="mr-sm-2">Enter a task:</label>
+                    <input type="text" class="form-control  mb-2 mr-sm-2" id="name" name="name"/>
+                </div>
+                <button type="submit" class="form-control btn btn-primary mb-2" onclick=addTask()>Add</button>
+            </form>
+        </section>
+      
+        <script th:inline="javascript"> var contextRoot = /*[[@{/}]]*/ '';</script>
+        <script th:src="@{/javascript/tasks.js}" defer></script>
+    </body>
+</html>

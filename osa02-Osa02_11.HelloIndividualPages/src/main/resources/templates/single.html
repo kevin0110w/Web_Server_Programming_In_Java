@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Items</title>
+    </head>
+
+    <body>
+        <h1 th:text='${item.name}'>Name</h1>
+
+        <h2 th:text='${item.type}'>Type</h2>
+        
+        <a th:href="@{/}">Back to listing</a>
+
+    </body>
+</html>

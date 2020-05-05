@@ -1,0 +1,12 @@
+2020-04-23 21:45:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "FILE" not found; SQL statement:
+select file0_.id as id1_0_, file0_.content as content2_0_, file0_.content_length as content_3_0_, file0_.content_type as content_4_0_, file0_.name as name5_0_ from file file0_ [42102-197]
+2020-04-24 20:28:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "FILE" not found; SQL statement:
+select file0_.id as id1_0_, file0_.content as content2_0_, file0_.media_type as media_ty3_0_, file0_.name as name4_0_, file0_.size as size5_0_ from file file0_ [42102-197]
+2020-04-24 20:28:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "FILE" not found; SQL statement:
+select file0_.id as id1_0_, file0_.content as content2_0_, file0_.media_type as media_ty3_0_, file0_.name as name4_0_, file0_.size as size5_0_ from file file0_ [42102-197]
+2020-04-24 20:29:10 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLException: Table "FILE" not found; SQL statement:
+select * from file [42102-197]
